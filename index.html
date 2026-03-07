@@ -265,7 +265,9 @@
   }
 
   .fach-layout {
-    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     margin-bottom: 40px;
   }
 
@@ -328,7 +330,7 @@
   /* ── PDF CARDS — horizontal row ── */
   .pdf-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     margin-bottom: 52px;
   }
@@ -642,6 +644,7 @@
     .intro-band { padding: 40px 6%; }
 
     /* FACHGEBIETE — 4-col label grid → 2-col */
+    .fach-layout { grid-template-columns: 1fr; gap: 20px; }
     .pub-label-full { display: none; }
     section#fach > div:first-child { grid-template-columns: 1fr 1fr; }
 
@@ -774,9 +777,9 @@
   <div class="fach-layout">
     <div>
       <p class="fach-intro">Ich habe frühzeitig meinen soziologischen Schwerpunkt auf Risiko-, Konsum- und Entscheidungsprozesse in digitalen Umfeldern gelegt. Ich analysiere Glücksspiel als soziales Phänomen im Spannungsfeld von Regulierung, Marktmechanismen und gesellschaftlichen Dynamiken.</p>
-      <p class="fach-intro">Auf Basis empirischer Methoden und sozialwissenschaftlicher Theorien untersuche ich Spielerverhalten, Community-Strukturen und normative Rahmenbedingungen. Meine Expertise verbindet wissenschaftliche Analyse mit praxisnaher Einordnung aktueller Entwicklungen im Glücksspielsektor.</p>
     </div>
     <div>
+      <p class="fach-intro">Auf Basis empirischer Methoden und sozialwissenschaftlicher Theorien untersuche ich Spielerverhalten, Community-Strukturen und normative Rahmenbedingungen. Meine Expertise verbindet wissenschaftliche Analyse mit praxisnaher Einordnung aktueller Entwicklungen im Glücksspielsektor.</p>
     </div>
   </div>
 
