@@ -613,6 +613,56 @@
     color: rgba(250,250,246,0.22);
   }
 
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav { padding: 0 5%; }
+    .nav-links { gap: 16px; }
+    .nav-links li:nth-child(1),
+    .nav-links li:nth-child(2) { display: none; }
+
+    /* HERO */
+    .hero { padding-left: 5%; padding-right: 5%; justify-content: flex-start; padding-top: 80px; }
+    .hero-content { padding: 20px 0 32px; }
+    h1.hero-name { font-size: clamp(56px, 15vw, 100px); }
+    .hero-descriptor { grid-template-columns: 1fr; gap: 0; }
+    .hero-desc-item { border-right: none; border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .hero-desc-item:last-child { border-bottom: none; }
+
+    /* INTRO BAND */
+    .intro-band { padding: 40px 6%; }
+
+    /* FACHGEBIETE — 4-col label grid → 2-col */
+    .pub-label-full { display: none; }
+    section#fach > div:first-child { grid-template-columns: 1fr 1fr; }
+
+    /* PUB GRID → 1 col */
+    .pub-grid { grid-template-columns: 1fr; }
+    .pub-card.span2 { grid-column: auto; }
+
+    /* PDF CARDS → 1 col */
+    .pdf-row { grid-template-columns: 1fr; }
+
+    /* FOCUS GRID — 4-col → 2-col */
+    .focus-cols { grid-template-columns: 1fr 1fr !important; }
+    .focus-col { border-right: none; border-bottom: 1px solid var(--border); padding: 20px 0 !important; }
+    .focus-col:last-child { border-bottom: none; }
+
+    /* VITA → 1 col */
+    .vita-grid { grid-template-columns: 1fr; gap: 40px; }
+
+    /* CONTACT STRIP */
+    .contact-strip { flex-direction: column; align-items: flex-start; gap: 24px; padding: 40px 6%; }
+    .contact-strip-name { font-size: 28px; }
+  }
+
+  @media (max-width: 480px) {
+    h1.hero-name { font-size: clamp(44px, 18vw, 80px); }
+    .hero-meta { flex-wrap: wrap; gap: 10px; }
+    .nav-links { gap: 10px; }
+  }
+
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity:0; transform: translateY(18px); }
