@@ -340,7 +340,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: box-shadow 0.32s, transform 0.25s, border-color 0.25s;
-    height: 220px;
+    height: 340px;
     display: flex;
     flex-direction: column;
   }
@@ -414,7 +414,7 @@
                 border-color 0.25s;
   }
   .pdf-card:hover .pdf-card-body {
-    transform: translateY(52px);
+    transform: translateY(72px);
     border-color: transparent;
   }
 
@@ -471,7 +471,15 @@
     font-size: 9px; font-weight: 700; letter-spacing: 0.2em;
     text-transform: uppercase; color: var(--muted);
     background: var(--border); display: inline-block;
-    padding: 3px 8px; align-self: flex-start;
+    padding: 3px 8px;
+  }
+
+  /* Tag row: tag left, button right */
+  .pdf-card-tag-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   }
   .pub-card-title {
     font-family: 'Fraunces', serif;
@@ -785,12 +793,12 @@
         <iframe src="Anja%20Sellman-Reiner%20Konsumverhalten%20in%20Onlineshops%20-%20Verhaltensforschung.pdf" class="pdf-iframe" loading="lazy"></iframe>
       </div>
       <div class="pdf-card-body">
-        <span class="pub-card-tag">Konsumsoziologie</span>
-        <div class="pub-card-title">Konsumverhalten in Online Shops — Trigger, Muster und digitale Nudges</div>
-        <div class="pub-card-meta">Verhaltensforschung · Digitaler Markt</div>
-        <div class="pub-card-footer">
+        <div class="pdf-card-tag-row">
+          <span class="pub-card-tag">Konsumsoziologie</span>
           <a href="Anja%20Sellman-Reiner%20Konsumverhalten%20in%20Onlineshops%20-%20Verhaltensforschung.pdf" target="_blank" class="pub-dl">↓ PDF öffnen</a>
         </div>
+        <div class="pub-card-title">Konsumverhalten in Online Shops — Trigger, Muster und digitale Nudges</div>
+        <div class="pub-card-meta">Verhaltensforschung · Digitaler Markt</div>
       </div>
     </div>
 
@@ -814,13 +822,13 @@
         </div>
       </div>
       <div class="pdf-card-body">
-        <span class="pub-card-tag">Entscheidungssoziologie</span>
+        <div class="pdf-card-tag-row">
+          <span class="pub-card-tag">Entscheidungssoziologie</span>
+          <a href="#" class="pub-dl">↓ PDF</a>
+        </div>
         <div class="pub-card-title">Soziologische Einflussfaktoren auf Entscheidungsprozesse in digitalen Umfeldern</div>
         <div class="pub-card-meta">Soziale Normen · Digitaler Raum</div>
-        <div class="pub-card-footer">
-          <span class="pub-soon">Demnächst</span>
-          <a href="#" class="pub-dl">↓ PDF</a>
-        </div>
+        <span class="pub-soon">Demnächst</span>
       </div>
     </div>
 
@@ -844,13 +852,13 @@
         </div>
       </div>
       <div class="pdf-card-body">
-        <span class="pub-card-tag">Suchtsoziologie · Risikoforschung</span>
-        <div class="pub-card-title">Risikoanalyse von Spielsucht und Online Gaming — Gesellschaftliche Kosten und Prävention</div>
-        <div class="pub-card-meta">iGaming-Regulierung · Klinische Soziologie · Evidenzbasierte Intervention</div>
-        <div class="pub-card-footer">
-          <span class="pub-soon">Demnächst verfügbar</span>
+        <div class="pdf-card-tag-row">
+          <span class="pub-card-tag">Suchtsoziologie · Risikoforschung</span>
           <a href="#" class="pub-dl">↓ PDF</a>
         </div>
+        <div class="pub-card-title">Risikoanalyse von Spielsucht und Online Gaming — Gesellschaftliche Kosten und Prävention</div>
+        <div class="pub-card-meta">iGaming-Regulierung · Klinische Soziologie · Evidenzbasierte Intervention</div>
+        <span class="pub-soon">Demnächst verfügbar</span>
       </div>
     </div>
 
